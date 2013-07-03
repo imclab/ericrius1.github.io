@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $('#name').on('click', function() {
     $('#container').fadeToggle(1000);
-    $('#canvas').fadeToggle(1000);
+    $('#canvas').hide();
 
 
   })
