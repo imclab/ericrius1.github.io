@@ -59,6 +59,13 @@ body {
   display: inline;
 }
 
+#name {
+   cursor: pointer; 
+   color: orange;
+   border: 1px;
+}
+
+
 #blog{
   display: inline;
   padding: 1%;
