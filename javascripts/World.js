@@ -106,6 +106,7 @@ var World = function() {
   var FBO_fluid_p;
   var FBO_fluid_store;
   var FBO_fluid_backbuffer;
+  var canvas;
 
   var simScale = 2; // factor for reduced buffer size (TODO) 
 
@@ -142,9 +143,9 @@ var World = function() {
 
   function load() {
     clearInterval(timer);
-    var c = document.getElementById("canvas");
+    canvas = document.getElementById("canvas");
     try {
-      gl = c.getContext("experimental-webgl", {
+      gl = canvas.getContext("experimental-webgl", {
         depth: false
 
       });
@@ -164,8 +165,10 @@ var World = function() {
     viewX = window.innerWidth;
     viewY = window.innerHeight;
 
-    c.width = viewX;
-    c.height = viewY;
+    window.addEventListener( 'resize', onWindowResize);
+
+    canvas.width = viewX;
+    canvas.height = viewY;
 
     prog_copy = createAndLinkProgram("shader-fs-copy");
 
@@ -594,6 +597,16 @@ var World = function() {
   function reset() {
     adjustShaders();
     this.mods.blur = Math.random() * .1;
+
+  }
+
+  function onWindowResize(){
+    viewX = window.innerWidth;
+    viewY = window.innerHeight;
+    debugger;
+    canvas.width = viewX;
+    canvas.height = viewY;
+
 
   }
 
