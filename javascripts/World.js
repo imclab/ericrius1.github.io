@@ -142,7 +142,7 @@ var World = function() {
 
   function load() {
     clearInterval(timer);
-    var c = document.getElementById("c");
+    var c = document.getElementById("canvas");
     try {
       gl = c.getContext("experimental-webgl", {
         depth: false
