@@ -1,6 +1,11 @@
 $(document).ready(function() {
   $('#container').hide();
   var opacityTarget = 0.08;
+  
+  var glow = $('#name');
+  setInterval(function() {
+    glow.toggleClass('glow');
+  }, 1000);
 
   $('#name').on('click', function() {
     $('#container').fadeToggle(1000);
@@ -12,6 +17,6 @@ $(document).ready(function() {
       console.log(opacityTarget);
 
     });
-    
+
   });
 })

@@ -61,8 +61,13 @@ body {
    font-family:'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
    cursor: pointer; 
    color: orange;
+   display: inline;
    font-size: 3em;
-
+   -webkit-transition: text-shadow 1s linear;
+   transition: text-shadow 1s linear;
+}
+#name.glow{
+  text-shadow: 0 0 20px white;
 }
 
 #linked {
