@@ -4,10 +4,7 @@ $(document).ready(function() {
 
   $('#name').on('click', function() {
     $('#container').fadeToggle(1000);
-    $('#canvas').animate({
-      opacity: opacityTarget,
-    }, 1000, function() {
-      opacityTarget = 1.0;
+    $('#canvas').fadeToggle(1000);
     });
 
   })
