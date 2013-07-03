@@ -104,8 +104,8 @@ header h2 {
 #container {
   position: fixed;
   margin-left: 20%;
-  margin-top: 2%;
-  background-color: rgba(200, 200, 200, 0.80);
+  margin-top: 1%;
+  background-color: rgba(200, 200, 200, 0.90);
   padding-bottom: 0.5%;
   padding-left: 2%;
 }
