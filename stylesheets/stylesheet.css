@@ -62,7 +62,7 @@ body {
 #name {
    cursor: pointer; 
    color: orange;
-   border: 1px;
+   border: 1px solid black
 }
 
 
@@ -111,7 +111,7 @@ header h2 {
   position: fixed;
   margin-left: 20%;
   margin-top: 1%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
   padding-bottom: 0.5%;
   padding-left: 2%;
 }
