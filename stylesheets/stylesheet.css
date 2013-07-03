@@ -55,20 +55,19 @@ body {
   color: #6d6d6d;
 }
 
-.IN-widget {
-  padding-right: 5%;
+#linked {
+  display: inline;
 }
 
 #blog{
   display: inline;
-  padding: 5%;
+  padding: 1%;
   position: relative;
 
 }
 
 #github{
   display: inline;
-  padding: 5%;
   position: relative;
 
 }
@@ -85,7 +84,7 @@ header {
   padding-bottom: 25px;
 }
 
-header h1 {
+ h1 {
   font-family:'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
   letter-spacing: -1px;
   font-size: 48px;
