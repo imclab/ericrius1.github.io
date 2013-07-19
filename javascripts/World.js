@@ -603,7 +603,6 @@ var World = function() {
   function onWindowResize(){
     viewX = window.innerWidth;
     viewY = window.innerHeight;
-    debugger;
     canvas.width = viewX;
     canvas.height = viewY;
 
