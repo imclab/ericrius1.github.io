@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $('#container').hide();
-  var opacityTarget = 0.08;
+  //$('#container').hide();
+  var opacityTarget = 1.0;
+  $('canvas').animate({opacity: 0.06}, 1000);
   
   var glow = $('#name');
   setInterval(function() {
@@ -14,7 +15,6 @@ $(document).ready(function() {
       opacity: opacityTarget,
     }, 1000, function() {
       opacityTarget = opacityTarget === 1.0 ? 0.06 : 1.0;
-      console.log(opacityTarget);
 
     });
 
