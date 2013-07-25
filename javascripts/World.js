@@ -163,7 +163,7 @@ var World = function() {
     };
 
     viewX = window.innerWidth;
-    viewY = window.innerHeight;
+    viewY = window.innerHeight+100;
 
     window.addEventListener( 'resize', onWindowResize);
 
